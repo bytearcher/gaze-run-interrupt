@@ -3,10 +3,13 @@
     "version": "1.0.0",
     "description": "",
     "main": "dist/index.js",
+    "dependencies": {},
     "devDependencies": {
-        "typescript": "^1.8.10"
+        "typescript": "^1.8.10",
+        "typings": "^0.7.12"
     },
     "scripts": {
-        "prepublish": "tsc"
+        "prepublish": "typings install && npm run build",
+        "build": "tsc"
     }
 }
