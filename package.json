@@ -1,0 +1,12 @@
+{
+    "name": "typescript-project-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "devDependencies": {
+        "typescript": "^1.8.10"
+    },
+    "scripts": {
+        "prepublish": "tsc"
+    }
+}
