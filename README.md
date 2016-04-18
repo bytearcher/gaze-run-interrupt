@@ -1,9 +1,14 @@
-# typescript-project-template
+# TypeScript Project Template
 
-# Design philosophy
+Robust and bare-bones project template for TypeScript projects. Includes most commonly used functionality you could expect in modern development.
 
-- minimal 
-- not relying on too many other libraries, sticking to bare bones where possible or only using battle tested and well known libraries
+Design philosophy
+
+- minimal
+- clarity and robustness
+- not relying on too many other libraries
+- sticking to bare bones where possible
+- only using battle tested and well known libraries
 - possibility to update project template later
 
 # Features
@@ -21,21 +26,28 @@
 
 ## Getting started
 
-You're starting a fresh new project. Clone the project template repository.
+You're starting a fresh new project. Clone the TypeScript Project Template repository with options: `--single-branch` to ignore any feature branches on GitHub and `--origin` to reserve _origin_ remote name for your own upstream repository.
     
-    git clone https://github.com/bytearcher/typescript-project-template.git <yourprojectname>
+    git clone \
+        --single-branch \
+        --origin typescript-project-template \
+        https://github.com/bytearcher/typescript-project-template.git \
+        <yourprojectname>
+    git branch --unset-upstream
 
-Remove `origin` remote to not confuse ourselves later.
-
-    git remote remove origin
-
-At this point, optionally init your repository of choice. It can be Bitbucket, GitHub or something else.
+Then init your upstream repository of choice, for example GitHub or Bitbucket.
 
 Start developing your project. When the template project evolves, you can get latest changes see "Updating newest template to your existing project".
 
 ## Updating newest template to your existing project
 
-Temporarily add `typescript-project-template-origin` remote.
+You should have `typescript-project-template` remote in your repository. If not, then add it with
+
+    git remote add typescript-project-template https://github.com/bytearcher/typescript-project-template
+
+Then fetch and merge the latest version
+
+    git pull typescript-project-template master
 
 # Questions
 
