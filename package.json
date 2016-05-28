@@ -1,0 +1,20 @@
+{
+    "name": "typescript-project-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/src/index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "mocha": "^2.4.5",
+        "rimraf": "^2.5.2",
+        "typescript": "^1.8.10",
+        "typings": "^1.0.4"
+    },
+    "scripts": {
+        "prepublish": "typings install && npm run build",
+        "clean": "rimraf dist",
+        "build": "tsc",
+        "test": "cd dist ; mocha"
+    }
+}
