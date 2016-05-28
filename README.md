@@ -1,19 +1,37 @@
 
 Watcher that interrupts the already launched actions in case of new changes.
 
-## Clean
+## Usage
 
-usage:
+Create a shell script that calls node with
 
-    gaze_run_interrupt('src/**/*.ts', [
+    #!/usr/bin/env node
+    
+    var gaze_run_interrupt = require('gaze-run-interrupt');
+    
+    gaze_run_interrupt('{src,test}/**/*.ts', [
         { command: 'tsc' },
-        { command: 'mocha', cwd: 'dist' }
+        { command: 'mocha', args: ['--reporter', 'min'], cwd: 'dist' }
     ]);
 
-or multiple patterns
+## Arguments 
 
-    gaze_run_interrupt(['src/**/*.ts', '*.sh'], [
-        { command: 'tsc' },
-        { command: 'mocha', cwd: 'dist' }
-    ]);
+### pattern(s)
+
+The first argument accepts a pattern string
+
+    gaze_run_interrupt('src/**/*.ts', ...
+
+or and array of pattern strings
+
+    gaze_run_interrupt(['src/**/*.ts', '*.sh'], ...
+
+### commands
+
+The second argument is an array of command specifier objects, where each object contains
+
+- `command`: executable
+- `args`: array of arguments passed to the executable (optional)
+- `cwd`: working directory where the command is executed (optional)
+
 
