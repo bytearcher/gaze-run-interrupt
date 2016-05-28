@@ -1,6 +1,4 @@
 
-/// <reference path="../typings/main.d.ts"/>
-
 import {assert, expect} from 'chai';
 
 import Greeter = require('../src/Greeter');
