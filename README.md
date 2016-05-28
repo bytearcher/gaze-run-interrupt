@@ -26,14 +26,14 @@ Design philosophy
 
 ## Getting started
 
-You're starting a fresh new project. Clone the TypeScript Project Template repository with options: `--single-branch` to ignore any feature branches on GitHub and `--origin` to reserve _origin_ remote name for your own upstream repository.
+You're starting a fresh new project. Clone the TypeScript Project Template repository with options: `--single-branch` to ignore any feature branches on GitHub. Then remove the 'origin' remote so that you can use it to set up your own upstream repository.
     
     git clone \
         --single-branch \
-        --origin typescript-project-template \
         https://github.com/bytearcher/typescript-project-template.git \
         <yourprojectname>
-    git branch --unset-upstream
+    cd <yourprojectname>
+    git remote remove origin 
 
 Then init your upstream repository of choice, for example GitHub or Bitbucket.
 
@@ -41,13 +41,9 @@ Start developing your project. When the template project evolves, you can get la
 
 ## Updating newest template to your existing project
 
-You should have `typescript-project-template` remote in your repository. If not, then add it with
+To incorporate latest changes in TypeScript Project Template into your own project, do a `git pull` as follows
 
-    git remote add typescript-project-template https://github.com/bytearcher/typescript-project-template
-
-Then fetch and merge the latest version
-
-    git pull typescript-project-template master
+    git pull --log https://github.com/bytearcher/typescript-project-template master
 
 # Questions
 
