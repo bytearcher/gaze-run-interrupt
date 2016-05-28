@@ -2,7 +2,7 @@
     "name": "typescript-project-template",
     "version": "1.0.0",
     "description": "",
-    "main": "dist/index.js",
+    "main": "dist/src/index.js",
     "dependencies": {},
     "devDependencies": {
         "chai": "^3.5.0",
