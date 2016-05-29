@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Watch files with gaze and run sequence of commands. Interrupts previous sequence if not finished.",
     "main": "dist/src/index.js",
+    "files": ["src", "dist"],
     "repository": "bytearcher/gaze-run-interrupt",
     "bugs": "https://github.com/bytearcher/gaze-run-interrupt/issues",
     "dependencies": {
