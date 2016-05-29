@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "dist/src/index.js",
+    "files": ["src", "dist"],
     "dependencies": {},
     "devDependencies": {
         "chai": "^3.5.0",
