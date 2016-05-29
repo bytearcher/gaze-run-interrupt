@@ -1,7 +1,7 @@
 {
   "name": "gaze-run-interrupt",
   "version": "1.0.1",
-  "description": "Watch files with gaze and run sequence of commands. Interrupts previous sequence if not finished.",
+  "description": "Watch files with gaze and run a sequence of commands. Interrupts the previous sequence if it has not completed yet.",
   "main": "dist/src/index.js",
   "files": [
     "src",
