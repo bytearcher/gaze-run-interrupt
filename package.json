@@ -15,7 +15,7 @@
     "scripts": {
         "prepublish": "typings install && npm run build",
         "clean": "rimraf dist",
-        "build": "tsc",
-        "test": "cd dist ; mocha"
+        "build": "npm run clean && tsc",
+        "test": "npm run build && cd dist ; mocha"
     }
 }
