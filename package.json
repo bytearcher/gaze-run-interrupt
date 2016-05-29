@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "jsonlint": "^1.6.2",
     "mocha": "^2.4.5",
     "rimraf": "^2.5.2",
     "typescript": "^1.8.10",
@@ -23,7 +24,7 @@
   "scripts": {
     "prepublish": "typings install && npm run build",
     "clean": "rimraf dist",
-    "build": "tsc",
-    "test": "cd dist ; mocha"
+    "build": "npm run clean && jsonlint -i package.json && tsc",
+    "test": "npm run build && cd dist ; mocha"
   }
 }
