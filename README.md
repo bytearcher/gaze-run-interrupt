@@ -1,6 +1,8 @@
 
 Watcher that interrupts the already launched actions in case of new changes.
 
+Similar to [gaze-cli](https://www.npmjs.com/package/gaze-cli) except that this package interrupts ongoing actions if necessary, gaze-cli does not support that.
+
 ## Usage
 
 Create a shell script that calls node with
