@@ -11,7 +11,7 @@
   "repository": "bytearcher/gaze-run-interrupt",
   "bugs": "https://github.com/bytearcher/gaze-run-interrupt/issues",
   "dependencies": {
-    "chalk": "^1.1.3",
+    "chalk": "4.1.0",
     "gaze": "^1.0.0"
   },
   "devDependencies": {
