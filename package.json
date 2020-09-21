@@ -1,8 +1,8 @@
 {
   "name": "gaze-run-interrupt",
   "version": "1.0.1",
-  "description": "Watch files with gaze and run a sequence of commands. Interrupts the previous sequence if it has not completed yet.",
-  "main": "dist/src/index.js",
+  "description": "Watch files with gaze and run a sequence of commands. Interrupts the previous sequence if it hasn't completed yet.",
+  "main": "src/index.js",
   "files": [
     "src",
     "dist"
@@ -15,18 +15,13 @@
   },
   "devDependencies": {
     "@bytearcher/eslint-config-node": "github:bytearcher/eslint-config-node",
-    "chai": "^3.5.0",
     "eslint": "7.9.0",
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-jest": "24.0.2",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-sort-requires": "2.1.0",
-    "jsonlint": "^1.6.2",
-    "mocha": "^2.4.5",
-    "prettier": "2.1.2",
-    "rimraf": "^2.5.2",
-    "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "jest": "26.4.2",
+    "prettier": "2.1.2"
   },
   "scripts": {
     "test": "node test/test"
