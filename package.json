@@ -29,9 +29,6 @@
     "typings": "^1.0.4"
   },
   "scripts": {
-    "prepublish": "typings install && npm run build",
-    "clean": "rimraf dist",
-    "build": "npm run clean && jsonlint -i package.json && tsc",
-    "test": "npm run build && cd dist ; mocha"
+    "test": "node test/test"
   }
 }
