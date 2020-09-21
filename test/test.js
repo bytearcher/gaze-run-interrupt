@@ -6,6 +6,7 @@ gaze_run_interrupt("{src,test}/**/*.js", [
     args: ["1"],
   },
   { command: "tree" },
+  { command: "false" },
 ]);
 
 setTimeout(() => {
